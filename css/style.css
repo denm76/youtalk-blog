@@ -265,8 +265,6 @@ body {
 
 ._container {}
 
-.main-block__body {}
-
 .main-block__title {
   display: flex;
   flex-direction: column;
