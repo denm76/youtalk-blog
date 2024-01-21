@@ -638,7 +638,9 @@ span.main-block__article-date_span6 {
 
 
 /* -------------------------Blog - Page---------------------------- */
-.main-block__body {
+.main-block__body {}
+
+.body-section {
   display: flex;
   justify-content: space-between;
 }
@@ -765,6 +767,12 @@ span.main-block__content-span {
 
 .main-block__titleh3 {
   margin-top: 24px;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133.333%;
 }
 
 .main-block__descriptionh3 {
@@ -999,21 +1007,27 @@ span.ontogenez-block__spandescription {
 
 .blur {
   position: absolute;
-  top: 192vw;
+  top: 140vw;
   left: 83vw;
 }
 
 .blur3 {
   position: absolute;
-  bottom: 39vw;
+  bottom: 28vw;
   right: 0vw;
 }
 
 .footer-blur {
+  background: url("/images/svg/footerback.svg") no-repeat;
+  background-size: 100%;
   position: absolute;
+  width: 100%;
+  height: 100vw;
   left: 0px;
   top: -82px;
 }
+
+
 
 .main-services {
   max-width: 282px;
@@ -1241,8 +1255,12 @@ span.ontogenez-block__spandescription {
   width: 108px;
 }
 
+._adapt-class {
+  display: none;
+}
+
 /* -------------------------@media--------------------------------- */
-@media only screen and (min-width: 1025px) {}
+
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   ._container {
@@ -1331,6 +1349,64 @@ span.ontogenez-block__spandescription {
   .footer {
     margin-top: 60px;
   }
+
+  /* ----------------------page------------------------ */
+  ._adapt-class {
+    display: inline;
+  }
+
+  ._adapt-class a {
+    color: #2963A3;
+  }
+
+  .main-block__content-span_span2,
+  .main-block__content-span_span3,
+  .main-block__content-span_span4,
+  .main-block__content-span_span5,
+  .main-block__content-span_span6,
+  .blur,
+  .blur3,
+  .footer-blur,
+  .main-block__tagmenu {
+    display: none;
+  }
+
+  .main-services {
+    max-width: 222px;
+  }
+
+  .download-windows img {
+    width: 100%;
+    height: auto;
+  }
+
+  .download-windows__img {
+    max-width: 182px;
+  }
+
+  .download-image__button_btn {
+    max-width: 182px;
+  }
+
+  .main-services__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blur,
+  .blur3,
+  .footer-blur {
+    display: none;
+  }
+
+  .psychologyst-info__task {
+    display: flex;
+  }
+
+  .main-services__sessions {
+    margin-top: 24px;
+  }
+
 }
 
 @media(min-width:415px) and (max-width:768px) {
@@ -1432,6 +1508,87 @@ span.ontogenez-block__spandescription {
     margin-top: 26px;
     padding-bottom: 26px;
   }
+
+  /* ------------------------page-------------------- */
+  ._adapt-class {
+    display: inline;
+  }
+
+  ._adapt-class a {
+    color: #2963A3;
+  }
+
+  .main-block__content-span_span2,
+  .main-block__content-span_span3,
+  .main-block__content-span_span4,
+  .main-block__content-span_span5,
+  .main-block__content-span_span6,
+  .blur,
+  .blur3,
+  .main-block__content-span_span2,
+  .main-block__content-span_span3,
+  .main-block__content-span_span4,
+  .main-block__content-span_span5,
+  .main-block__content-span_span6,
+  .blur,
+  .blur3,
+  .footer-blur,
+  .main-block__problem,
+  .main-block__tagmenu {
+    display: none;
+  }
+
+  .body-section {
+    flex-direction: column;
+  }
+
+  .main-block__services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 23px;
+    row-gap: 30px;
+    column-gap: 18px;
+  }
+
+  .download-windows {
+    width: 356px;
+  }
+
+  .psychologist-info {
+    width: 356px;
+    margin-top: 0px;
+  }
+
+  .main-services__sessions {
+    margin-top: 0px;
+    width: 356px;
+    height: 248px;
+    flex-shrink: 0;
+    background-size: 100%;
+  }
+
+  .main-services__image {
+    margin-top: 0px;
+    width: 100%;
+    height: 242px;
+  }
+
+  .main-services__image img {
+    width: 100%;
+    height: 242px;
+  }
+
+  .psychologyst-info__task {
+    display: flex;
+  }
+
+  .sessions-advert__text {
+    max-width: 291px;
+  }
+
+  .main-services__sessions {
+    padding: 24px 42.93px 4px 21.47px;
+  }
 }
 
 @media (min-width:321px) and (max-width:414px) {
@@ -1510,6 +1667,151 @@ span.ontogenez-block__spandescription {
   .page__background-vector {
     display: none;
   }
+
+  /* ----------------------page--------------------- */
+
+  ._adapt-class {
+    display: inline;
+  }
+
+  ._adapt-class a {
+    color: #2963A3;
+  }
+
+  .main-block__content-span_span2,
+  .main-block__content-span_span3,
+  .main-block__content-span_span4,
+  .main-block__content-span_span5,
+  .main-block__content-span_span6,
+  .blur,
+  .blur3,
+  .main-block__content-span_span2,
+  .main-block__content-span_span3,
+  .main-block__content-span_span4,
+  .main-block__content-span_span5,
+  .main-block__content-span_span6,
+  .blur,
+  .blur3,
+  .footer-blur,
+  .main-block__problem,
+  .main-block__tagmenu {
+    display: none;
+  }
+
+  .breadcrumblist__page {
+    display: flex;
+  }
+
+  .breadcrumblist__page_link:last-child {
+    position: relative;
+    margin-left: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .breadcrumblist__page_link:nth-child(2) {
+    position: relative;
+  }
+
+  .breadcrumblist__page_link:nth-child(2)::after {
+    position: absolute;
+    color: rgba(51, 51, 51, 0.70);
+    font-size: 25px;
+    top: -2px;
+    left: 33px;
+    content: "\203A";
+
+  }
+
+  .main-block__sections {
+    max-width: 374px;
+  }
+
+  .main-block__sections img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-block__content-span {
+    align-items: flex-start;
+  }
+
+  .body-section {
+    flex-direction: column;
+  }
+
+  .ontogenez-block__needhelp {
+    padding: 0;
+  }
+
+  .ontogenez-block__repertoir {
+    flex-direction: column;
+  }
+
+  .ontogenez-block__oldladyimage {
+    margin: 0;
+  }
+
+  .ontogenez-block__oldladyimage img {
+    width: 100%;
+  }
+
+  .ontogenez-block__descr {
+    margin-top: 24px;
+  }
+
+  .whatwedo-anxiety__img {
+    width: 50%;
+  }
+
+  .cards-repertoir {
+    flex-direction: column;
+  }
+
+  .cards-repertoir__card {
+    margin-right: 0px;
+  }
+
+  .cards-repertoir__card img {
+    width: 100%;
+  }
+
+  .cards-repertoir__card:first-child {
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+
+  .main-services {
+    max-width: 374px;
+  }
+
+  .main-block__services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+  }
+
+  .main-services__image {
+    margin-top: 24px;
+  }
+
+  .main-services__image img {
+    width: 100%;
+  }
+
+  .psychologyst-info__task {
+    display: flex;
+  }
+
+  .main-services__sessions {
+    margin-top: 24px;
+    background-size: 100% 101%;
+  }
+
+  .footer {
+    margin-top: 127px;
+  }
 }
 
 @media (max-width:320px) {
@@ -1564,11 +1866,6 @@ span.ontogenez-block__spandescription {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* .main-block__articleimg {
-    width: 100%;
-    min-height: 50vw;
-  } */
-
   .footer__column {
     flex-wrap: wrap;
   }
@@ -1600,4 +1897,225 @@ span.ontogenez-block__spandescription {
   .page__background-vector {
     display: none;
   }
+
+  /* -------------------page---------------- */
+  ._adapt-class {
+    display: inline;
+  }
+
+  ._adapt-class a {
+    color: #2963A3;
+  }
+
+  .main-block__content-span_span2,
+  .main-block__content-span_span3,
+  .main-block__content-span_span4,
+  .main-block__content-span_span5,
+  .main-block__content-span_span6,
+  .blur,
+  .blur3,
+  .main-block__content-span_span2,
+  .main-block__content-span_span3,
+  .main-block__content-span_span4,
+  .main-block__content-span_span5,
+  .main-block__content-span_span6,
+  .blur,
+  .blur3,
+  .footer-blur,
+  .main-block__problem,
+  .main-block__tagmenu {
+    display: none;
+  }
+
+  .breadcrumblist__page {
+    display: flex;
+  }
+
+  .breadcrumblist__page_link:last-child {
+    position: relative;
+    margin-left: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .breadcrumblist__page_link:nth-child(2) {
+    position: relative;
+  }
+
+  .breadcrumblist__page_link:nth-child(2)::after {
+    position: absolute;
+    color: rgba(51, 51, 51, 0.70);
+    font-size: 25px;
+    top: -2px;
+    left: 33px;
+    content: "\203A";
+  }
+
+  .main-block__breadcrumblist {
+    margin: 16px auto 30px 0px
+  }
+
+  .main-block__sections {
+    max-width: 374px;
+  }
+
+  span.main-block__author:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  .main-block__sections img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-block__content-span {
+    align-items: flex-start;
+  }
+
+  .body-section {
+    flex-direction: column;
+  }
+
+  .breadcrumblist__page {
+    margin-bottom: 32px;
+  }
+
+  h1.main-block__title {
+    font-size: 24px;
+  }
+
+  .main-block__author {
+    margin-top: 8px;
+  }
+
+  .main-block__mainimg {
+    margin-top: 16px;
+  }
+
+  .main-block__content-title {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .main-block__content {
+    margin-top: 16px;
+  }
+
+  .main-block__titleh3 {
+    margin-top: 16px;
+  }
+
+  .main-block__descriptionh3 {
+    margin-top: 8px;
+  }
+
+  .main-block__description:last-child {
+    margin-top: 8px;
+  }
+
+  .ontogenez-block__needhelp {
+    padding: 0;
+  }
+
+  .ontogenez-block__repertoir {
+    flex-direction: column;
+  }
+
+  .ontogenez-block__oldladyimage {
+    margin: 0;
+  }
+
+  .ontogenez-block__oldladyimage img {
+    width: 100%;
+  }
+
+  .main-block__delimeter {
+    margin-top: 16px;
+  }
+
+  .whatwedo-anxiety {
+    margin-top: 16px;
+  }
+
+  .anxiety-exercize {
+    margin-top: 16px;
+  }
+
+  .ontogenez-block {
+    margin-top: 16px;
+  }
+
+  .ontogenez-block__repertoir {
+    margin-top: 16px;
+  }
+
+  .ontogenez-block__needhelp {
+    margin-top: 16px;
+  }
+
+  .ontogenez-block__description {
+    margin-top: 16px;
+  }
+
+  .ontogenez-block__descr {
+    margin-top: 16px;
+  }
+
+  .whatwedo-anxiety__img {
+    width: 50%;
+  }
+
+  .cards-repertoir {
+    flex-direction: column;
+  }
+
+  .cards-repertoir__card {
+    margin-right: 0px;
+  }
+
+  .cards-repertoir__card img {
+    width: 100%;
+  }
+
+  .cards-repertoir__card:first-child {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+  .main-services {
+    max-width: 374px;
+  }
+
+  .main-block__services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .main-services__image {
+    margin-top: 16px;
+  }
+
+  .main-services__image img {
+    width: 100%;
+  }
+
+  .psychologist-info {
+    margin-top: 16px;
+  }
+
+  .psychologyst-info__task {
+    display: flex;
+  }
+
+  .main-services__sessions {
+    margin-top: 16px;
+    background-size: 100% 101%;
+  }
+
+  .footer {
+    margin-top: 60px;
+  }
+
 }
